@@ -1,0 +1,13 @@
+URxvt*scrollBar:	false
+URxvt*transparent:	true
+URxvt*shading:		30
+URxvt*cursorBlink:	true
+URxvt*pointerBlank:	true
+URxvt*cursorColor:	#941239
+URxvt*pointerColor:	#941239
+URxvt*depth:		32
+URxvt*background:	#321476
+URxvt*foreground:	#ffffff
+URxvt*color0:		#bbbbbb
+URxvt*color4:		#216bab
+URxvt*color12:		#216bab
