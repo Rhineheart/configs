@@ -1,0 +1,1 @@
+/home/rhine/.rhine-zsh/themes/agnoster.zsh-theme
