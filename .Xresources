@@ -1,3 +1,5 @@
+Xcursor.theme: whiteglass
+
 !-------------------------------------------------------------------------------
 ! Xft settings
 !-------------------------------------------------------------------------------
@@ -29,6 +31,7 @@ URxvt.lineSpace:            0
 ! Fonts
 URxvt.allow_bold:           false
 URxvt.font: xft:ter-powerline-x32n
+URxvt.boldFont: xft:ter-powerline-x32n
 
 ! Fix font space
 URxvt*letterSpace: -1
