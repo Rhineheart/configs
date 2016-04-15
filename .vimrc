@@ -70,3 +70,6 @@ if !empty(glob(projectPath."/.vimproject.session"))
 endif
 
 noremap <leader>q :call SaveAndCloseProject(projectPath)<CR>
+
+iabbrev @@ /**<cr>@file File description<cr>@author {@link https://github.com/Rhineheart Robin Swenson}<cr>/
+iabbrev ££ /**<cr>@description Description<cr>@see {@link module/object}<cr><cr>@param {integer} param<cr>/
