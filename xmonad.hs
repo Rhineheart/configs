@@ -15,15 +15,16 @@ import XMonad.Util.EZConfig
 myStrutlessLayout = ThreeCol 1 (3/100) (1/3)
 myStrutLayout = fullscreenFull Simplest
 myTiledLayout = Mirror $ Tall 1 (3/100) (1/2)
+portraitThreeCol = Mirror $ ThreeCol 1 (3/100) (1/3)
 
 main = do 
-	dzenLeftBar <- spawnPipe myTaskBar
-	dzenRightBar <- spawnPipe myStatusBar
+	-- dzenLeftBar <- spawnPipe myTaskBar
+	-- dzenRightBar <- spawnPipe myStatusBar
 	xmonad $ withUrgencyHook NoUrgencyHook $ defaultConfig --xfceConfig
 		{ borderWidth = 0
 		-- , modMask = mod4Mask
-		, layoutHook = noBorders $ avoidStruts(myStrutlessLayout) ||| myStrutLayout ||| myTiledLayout
-		, logHook = myLogHook dzenLeftBar
+		, layoutHook = noBorders $ avoidStruts(myStrutlessLayout) ||| myStrutLayout ||| myTiledLayout ||| portraitThreeCol
+		-- , logHook = myLogHook dzenLeftBar
 		, handleEventHook = fullscreenEventHook
 		, manageHook = fullscreenManageHook <+> manageDocks
 		, terminal = "urxvt"
