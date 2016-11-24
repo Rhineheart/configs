@@ -10,31 +10,31 @@
             <key>settings</key>
             <dict>
                 <key>background</key>
-                <string>#101A2A</string>
+                <string>#FAFAFA</string>
 
                 <key>caret</key>
-                <string>#40BCEC</string>
+                <string>#ae4090</string>
                 
                 <key>foreground</key>
-                <string>#fafafa</string>
+                <string>#202020</string>
                 
                 <key>invisibles</key>
                 <string>#3B3A32</string>
                 
                 <key>lineHighlight</key>
-                <string>#124060</string>
+                <string>#87e4dc</string>
                 
                 <key>selection</key>
-                <string>#125080</string>
+                <string>#a5e6e1</string>
+
+                <key>selectionBorder</key>
+                <string>#a5e6e1</string>
                 
                 <key>findHighlight</key>
                 <string>#ff0000</string>
                 
                 <key>findHighlightForeground</key>
                 <string>#00ff00</string>
-                
-                <key>selectionBorder</key>
-                <string>#222218</string>
                 
                 <key>activeGuide</key>
                 <string>#ff00ff</string>
@@ -101,9 +101,10 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#EFA070</string>
+                <string>#e07232</string>
             </dict>
         </dict>
+
         <dict>
             <key>name</key>
             <string>Number</string>
@@ -112,9 +113,10 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#EFA070</string>
+                <string>#e07232</string>
             </dict>
         </dict>
+
         <dict>
             <key>name</key>
             <string>Built-in constant</string>
@@ -123,12 +125,13 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#EFA070</string>
+                <string>#d0539e</string>
                 <key>fontStyle</key>
                 <string>italic</string>
             </dict>
         </dict>
         
+        <!-- Color hexes in CSS for example -->
         <dict>
             <key>name</key>
             <string>User-defined constant</string>
@@ -137,7 +140,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#206080</string>
+                <string>#e07232</string>
             </dict>
         </dict>
         
@@ -161,9 +164,11 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#60BBFD</string>
+                <string>#2b97a2</string>
             </dict>
         </dict>
+
+        <!-- function, var etc. -->
         <dict>
             <key>name</key>
             <string>Storage type</string>
@@ -174,7 +179,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#60BBFD</string>
+                <string>#2b97a2</string>
             </dict>
         </dict>
         
@@ -188,7 +193,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#EF5070</string>
+                <string>#8a62af</string>
             </dict>
         </dict>
         <dict>
@@ -201,7 +206,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#EF5070</string>
+                <string>#894b90</string>
             </dict>
         </dict>
 
@@ -215,10 +220,11 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#A8EA40</string>
+                <string>#5c9482</string>
             </dict>
         </dict>
         
+        <!-- xml keys, css tags etc. -->
         <dict>
             <key>name</key>
             <string>Tag name</string>
@@ -229,9 +235,10 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#4080C0</string>
+                <string>#5c7d94</string>
             </dict>
         </dict>
+
         <dict>
             <key>name</key>
             <string>Library class&#x2f;type</string>
@@ -245,6 +252,7 @@
                 <string>#4080C0</string>
             </dict>
         </dict>
+
         <dict>
             <key>name</key>
             <string>Markup tag</string>
@@ -255,7 +263,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#4080C0</string>
+                <string>#5c7d94</string>
             </dict>
         </dict>
         <dict>
@@ -282,7 +290,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#50fa7b</string>
+                <string>#4dc382</string>
             </dict>
         </dict>
         
@@ -309,6 +317,7 @@
                 <string>#4080B2</string>
             </dict>
         </dict>
+
         <dict>
             <key>name</key>
             <string>diff.header</string>
@@ -326,7 +335,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#bd93f9</string>
+                <string>#5f1b38</string>
             </dict>
         </dict>
         <dict>
@@ -335,16 +344,17 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#E6DB74</string>
+                <string>#da4c87</string>
             </dict>
         </dict>
+
         <dict>
             <key>scope</key>
             <string>message.error</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#F83333</string>
+                <string>#ff0000</string>
             </dict>
         </dict>
 
@@ -358,7 +368,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#902570</string>
+                <string>#ff0000</string>
             </dict>
         </dict>
 
