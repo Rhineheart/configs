@@ -1,0 +1,16 @@
+#!/usr/bin/node
+
+"use strict";
+
+const fs   = require("fs"),
+      yaml = require(__dirname + "/../lib/node_modules/js-yaml");
+
+process.argv.splice(0,2);
+
+if(process.argv.length !== 2) {
+    console.log("Run with [source] [destination]");
+    process.end();
+}
+
+var jsonFile = JSON.parse(fs.readFileSync(process.argv[0]));
+fs.writeFileSync(process.argv[1], yaml.safeDump(jsonFile));
