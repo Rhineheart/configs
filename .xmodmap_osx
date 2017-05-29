@@ -1,6 +1,10 @@
 keycode 16 = 7 slash 7 slash bar backslash bar
 keycode 17 = 8 parenleft 8 parenleft bracketleft braceleft bracketleft
 keycode 18 = 9 parenright 9 parenright bracketright braceright bracketright
+keycode 34 = U00E5 U00C5 U00E5 U00C5 asciicircum
+keycode 48 = U00E4 U00C4 U00E4 U00C4 asciitilde
+
+
 keycode 59 = comma semicolon comma semicolon less less less less
 keycode 60 = period colon period colon greater greater greater greater
 keycode 52 = z Z z Z less less less less
