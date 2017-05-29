@@ -9,6 +9,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -38,13 +39,25 @@ augroup END
 
 let mapleader = ","
 
-map <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
-map <leader>t :tabe <C-R>=expand("%:p:h") . "/" <CR>
-map <leader>s :split <C-R>=expand("%:p:h") . "/" <CR>
-map <leader>v :vsplit <C-R>=expand("%:p:h") . "/" <CR>
+function RhSource(file)
+    exec "source $HOME/.vim/" . a:file
+endfunction 
 
-noremap <expr> <silent> <Home> col('.') == match(getline('.'),'\S')+1 ? '0' : '^'
-imap <silent> <Home> <C-O><Home>
+function RhKeys(file)
+    call RhSource("keybinds/" . a:file)
+endfunction 
+
+call RhKeys("general.vim")
+
+" let g:NERDTreeDirArrowExpandable = '▸'
+" let g:NERDTreeDirArrowCollapsible = '▾'
+
+let g:NERDTreeDirArrowExpandable  = '+'
+let g:NERDTreeDirArrowCollapsible = '-'
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 if executable('ag')
       " Use Ag over Grep
