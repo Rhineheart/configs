@@ -68,6 +68,8 @@ if executable('ag')
       let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
 
+set colorcolumn=80
+
 set path=$PWD/**
 
 let projectPath = $PWD
